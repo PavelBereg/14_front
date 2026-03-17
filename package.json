@@ -2,11 +2,14 @@
   "name": "book-manager",
   "private": true,
   "version": "0.0.0",
+  "homepage": "git remote add origin https://github.com/PavelBereg/14_front",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "vue": "^3.5.30"
